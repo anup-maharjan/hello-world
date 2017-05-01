@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetgearCommunity</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cSource+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/jquery.main.js" defer></script>
+  <script src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" defer></script>
+  <script src="js/slick.js" defer></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="top-bar">
+        <div class="container">
+          <nav class="navbar navbar-default" id="nav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-NetgearCommunity-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="#"><img class="img-responsive" src="images/logo.png" alt="NETGEAR &reg; COMMUNITY" width="174" height="49"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-NetgearCommunity-nav">
+              <div class="nav navbar-nav navbar-right">
+                <div class="content-wrap">
+                  <select class="lang-selection">
+                    <option class="hideme" data-image="images/icon-flag01.png">&nbsp;</option>
+                    <option data-image="images/icon-flag01.png">&nbsp;</option>
+                    <option data-image="images/icon-flag01.png">&nbsp;</option>
+                  </select>
+                  <form action="#" class="search-form">
+                    <div class="search-holder">
+                      <input type="search" placeholder="SEARCH">
+                      <button type="submit">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <ul class="nav navbar-nav main-nav">
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">MyNetgear</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Netgear</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="breadcrumbs-bar">
+        <div class="container">
+          <ul class="breadcrumb holder">
+            <li class="active">Kudos leaderboard : Authors</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main id="main" role="main">
+      <section class="banner" style="background-image: url(images/banner.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="holder">
+              <ul class="list-inline login-controls">
+                <li>
+                  <a href="#">
+                    <span class="text-wrap">
+                      username
+                    </span>
+                    <span class="avatar-holder">
+                      <img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="50" height="50">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text-wrap">Notifications</span>
+                    <span class="count-wrap">0</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text-wrap">Messages</span>
+                    <span class="count-wrap">0</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="banner-content">
+                <h1>Welcome to the <span class="br-mobile">NETGEAR Community</span></h1>
+                <span class="description">Learn, explore, ask questions, and connect with our community of customers and experts</span>
+                <form class="search-form alt-style">
+                  <div class="search-holder">
+                    <div class="input-wrap">
+                      <input type="search" placeholder="Search for answers...">
+                    </div>
+                    <div class="btn-wrap">
+                      <input type="submit" value="Search">
+                    </div>
+                  </div>
+                  <p>Can’t find what you’re looking for? <span class="br-mobile"><a href="#">Ask a Question</a></span></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="switches-section no-barline">
+        <div class="container">
+          <h2>Kudos Leaderboard</h2>
+        </div>
+      </section>
+      <div class="main-holder kudos-main-holder">
+        <div class="container">
+          <div class="box">
+            <div class="tabset-wrap">
+              <ul class="tabset">
+                <li class="active"><a href="#authors">authors</a></li>
+                <li><a href="#posts">posts</a></li>
+              </ul>
+              <div class="time-range-selector">
+                <span class="title-label">Time Range:</span>
+                <ul class="tabs-sort list-inline">
+                  <li><a href="#">Last Day (24 Hours)</a></li>
+                  <li><a href="#">Last Week (7 Days)</a></li>
+                  <li><a href="#">Last Month (30 Days)</a></li>
+                  <li><a href="#">Last 6 Months</a></li>
+                  <li><a href="#">Last Year</a></li>
+                  <li><a href="#">All Time</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="authors">
+                <div class="profile-section">
+                  <div class="post-block">
+                    <ul class="post-list">
+                      <li>
+                        <span class="record-count">#1</span>
+                        <span class="avatar-holder">
+                          <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                        </span>
+                        <div class="profile-details">
+                          <h2><a href="#">Tim77</a></h2>
+                          <div class="profile-post">
+                            <span class="post">ADMIN</span>
+                          </div>
+                          <span class="post-description">Administrator</span>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="record-count">#2</span>
+                        <span class="avatar-holder">
+                          <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                        </span>
+                        <div class="profile-details">
+                          <h2><a href="#">Tim77</a></h2>
+                          <div class="profile-post">
+                            <span class="post">ADMIN</span>
+                          </div>
+                          <span class="post-description">Administrator</span>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="record-count">#3</span>
+                        <span class="avatar-holder">
+                          <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                        </span>
+                        <div class="profile-details">
+                          <h2><a href="#">Tim77</a></h2>
+                          <div class="profile-post">
+                            <span class="post">ADMIN</span>
+                          </div>
+                          <span class="post-description">Administrator</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="user-list-block row">
+                      <div class="column">
+                        <ul class="post-list">
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <ul class="post-list">
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <ul class="post-list">
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="record-count">#4</span>
+                            <span class="avatar-holder">
+                              <a href="#"><img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="60" height="60"></a>
+                            </span>
+                            <div class="profile-details">
+                              <h2><a href="#">Tim77</a></h2>
+                              <div class="profile-post">
+                                <span class="post">ADMIN</span>
+                              </div>
+                              <span class="post-description">Administrator</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pagination-wrap">
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                          <li class="disabled">
+                            <a href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo; Previous</span>
+                            </a>
+                          </li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li class="more">...</li>
+                          <li><a href="#">33</a></li>
+                          <li>
+                            <a href="#" aria-label="Next">
+                              <span aria-hidden="true">Next &raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="posts">
+                <div class="post-block">
+                  <ul class="post-list">
+                    <li class="header-scope alt-style">
+                      <span class="post-title">Subject</span>
+                      <span class="post-count">Replies</span>
+                      <span class="account-name">author</span>
+                      <span class="time-stamp">date</span>
+                    </li>
+                    <li>
+                      <span class="post-title"><a href="#">How do you deploy PoE switching?</a></span>
+                      <span class="post-count">8</span>
+                      <span class="account-name"><a href="#" class="alt-font">bradleyv</a></span>
+                      <span class="time-stamp">
+                        <time datetime="2017-02-06T17:19"><a href="#">Feb 6, 2017 5:19 PM</a></time>
+                        <span class="author">by <a href="#">aalexandrebeta</a></span>
+                        <span class="ico-gears"></span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="post-title"><a href="#">Unmanaged or managed 8 port switch - which one ...</a></span>
+                      <span class="post-count">0</span>
+                      <span class="account-name"><a href="#">Scott01</a></span>
+                      <span class="time-stamp">
+                        <time datetime="2017-03-08T15:27"><a href="#">Mar 8, 2017 3:27 PM</a></time>
+                        <span class="author">by <a href="#">Scott01</a></span>
+                        <span class="post">ADMIN</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="post-title"><a href="#">Power Consumtion JGS516PE vs JGS524PE</a></span>
+                      <span class="post-count">0</span>
+                      <span class="account-name"><a href="#">Scott01</a></span>
+                      <span class="time-stamp">
+                        <time datetime="2017-03-08T15:27"><a href="#">Mar 8, 2017 3:27 PM</a></time>
+                        <span class="author">by <a href="#">Scott01</a></span>
+                        <span class="post">ADMIN</span>
+                      </span>
+                    </li>
+                    <li class="footer-scope pagination-wrap">
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                          <li class="disabled">
+                            <a href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo; Previous</span>
+                            </a>
+                          </li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li class="more">...</li>
+                          <li><a href="#">33</a></li>
+                          <li>
+                            <a href="#" aria-label="Next">
+                              <span aria-hidden="true">Next &raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="support-block">
+          <div class="container">
+            <div class="row">
+              <span class="title">Looking for another opinion?</span>
+              <ul class="btn-list list-inline">
+                <li>
+                  <a href="#" class="btn btn-primary">Ask the community</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-primary">contact support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top clearfix">
+          <div class="row">
+            <div class="col-sm-11">
+              <nav class="footer-nav">
+                <ul class="list-inline">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-1">
+              <select class="lang-selection">
+                <option class="hideme" data-image="images/icon-flag01.png">&nbsp;</option>
+                <option data-image="images/icon-flag01.png">&nbsp;</option>
+                <option data-image="images/icon-flag01.png">&nbsp;</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-sm-8">
+              <ul class="social-networks list-inline">
+                <li><a href="#" class="facebook"><span class="ico-facebook"></span></a></li>
+                <li><a href="#" class="twitter"><span class="ico-tweet"></span></a></li>
+                <li><a href="#" class="youtube"><span class="ico-youtube"></span></a></li>
+                <li><a href="#" class="instagram"><span class="ico-instagram"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <span class="copyright-info">
+                © 1996-2016 <a href="#">NETGEAR<sup>®</sup></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

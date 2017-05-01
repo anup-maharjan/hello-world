@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetgearCommunity</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cSource+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/jquery.main.js" defer></script>
+  <script src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" defer></script>
+  <script src="js/slick.js" defer></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="top-bar">
+        <div class="container">
+          <nav class="navbar navbar-default" id="nav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-NetgearCommunity-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="#"><img class="img-responsive" src="images/logo.png" alt="NETGEAR &reg; COMMUNITY" width="174" height="49"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-NetgearCommunity-nav">
+              <div class="nav navbar-nav navbar-right">
+                <div class="content-wrap">
+                  <select class="lang-selection">
+                    <option class="hideme" data-image="images/icon-flag01.png">&nbsp;</option>
+                    <option data-image="images/icon-flag01.png">&nbsp;</option>
+                    <option data-image="images/icon-flag01.png">&nbsp;</option>
+                  </select>
+                  <form action="#" class="search-form">
+                    <div class="search-holder">
+                      <input type="search" placeholder="SEARCH">
+                      <button type="submit">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <ul class="nav navbar-nav main-nav">
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">MyNetgear</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Netgear</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="breadcrumbs-bar">
+        <div class="container">
+          <ul class="breadcrumb holder">
+            <li><a href="#">english</a></li>
+            <li class="active">private messages</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main id="main" role="main">
+      <section class="banner" style="background-image: url(images/banner.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="holder">
+              <ul class="list-inline login-controls">
+                <li>
+                  <a href="#">
+                    <span class="text-wrap">
+                      username
+                    </span>
+                    <span class="avatar-holder">
+                      <img class="img-responsive" src="images/avatar01.jpg" alt="image description" width="50" height="50">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text-wrap">Notifications</span>
+                    <span class="count-wrap">0</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text-wrap">Messages</span>
+                    <span class="count-wrap">0</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="banner-content">
+                <h1>Welcome to the <span class="br-mobile">NETGEAR Community</span></h1>
+                <span class="description">Learn, explore, ask questions, and connect with our community of customers and experts</span>
+                <form class="search-form alt-style">
+                  <div class="search-holder">
+                    <div class="input-wrap">
+                      <input type="search" placeholder="Search for answers...">
+                    </div>
+                    <div class="btn-wrap">
+                      <input type="submit" value="Search">
+                    </div>
+                  </div>
+                  <p>Can’t find what you’re looking for? <span class="br-mobile"><a href="#">Ask a Question</a></span></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="switches-section no-barline">
+        <div class="container">
+          <h2>Private Messages</h2>
+        </div>
+      </section>
+      <div class="main-holder">
+        <div class="container">
+          <div class="box">
+            <form class="post-form private-post-form" action="#">
+              <ul class="tabset">
+                <li class="active"><a href="#inbox">Inbox</a></li>
+                <li><a href="#sent-messages">Sent Messages</a></li>
+                <li><a href="#friends">Friends</a></li>
+                <li><a href="#ignored-users">Ignored Users</a></li>
+                <li><a href="#compose-new-message">Compose New Message</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="inbox">
+                  <div class="text-note">
+                    <p>No new messages</p>
+                  </div>
+                </div>
+                <div id="sent-messages">
+                  <div class="text-note">
+                    <p>You have no private messages.</p>
+                  </div>
+                </div>
+                <div id="friends">
+                  <div class="text-note">
+                    <p>You have not added anyone to your Friends list yet.</p>
+                  </div>
+                </div>
+                <div id="ignored-users">
+                  <div class="text-note">
+                    <p>You have no ignored users.</p>
+                  </div>
+                </div>
+                <div id="compose-new-message">
+                <div class="column-wrapper text-note">
+                    <div class="column">
+                      <div class="form-group">
+                        <label for="subject">Subject (Include model number and brief summary)</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter a subject">
+                      </div>
+                      <div class="form-group">
+                        <label for="model">Model (Recommended - Helps the community give the best answers)</label>
+                        <input type="text" class="form-control" id="model">
+                        <div class="timestamp text-right">Autosaved at <time datetime="13:11">01:11 PM</time></div>
+                      </div>
+                      <div class="tabs-body">
+                        <strong class="title-label">Body (Include additional detail including model version, firmware, OS and environment where relevant.)</strong>
+                        <ul class="tabset">
+                          <li class="active"><a href="#rich-text">Rich text</a></li>
+                          <li><a href="#html">html</a></li>
+                          <li><a href="#preview">preview</a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div id="rich-text">
+                            <img class="img-responsive" src="images/rich-text-widget.jpg" alt="image description" width="883" height="296">
+                          </div>
+                          <div id="html">
+                            <textarea cols="30" rows="10" placeholder="html" class="form-control"></textarea>
+                          </div>
+                          <div id="preview">
+                            <textarea cols="30" rows="10" placeholder="preview" class="form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-sm">
+                      <ul class="checkbox-list list-unstyled">
+                        <li>
+                          <input type="checkbox" id="subscribe" checked>
+                          <label for="subscribe">Email me when someone replies</label>
+                        </li>
+                      </ul>
+                      <div class="form-group">
+                        <label for="labels">Labels</label>
+                        <input type="text" class="form-control" id="labels">
+                        <span class="title-choose">Choose a label:</span>
+                        <ul class="list-inline labels-list">
+                          <li><a href="#">Before You Buy</a></li>
+                          <li><a href="#">Installation</a></li>
+                          <li><a href="#">Solutions</a></li>
+                          <li><a href="#">Troubleshooting</a></li>
+                          <li><a href="#">Firmware</a></li>
+                          <li><a href="#">Software & Apps</a></li>
+                          <li><a href="#">Hardware</a></li>
+                          <li><a href="#">Security</a></li>
+                          <li><a href="#">Share</a></li>
+                          <li><a href="#">Warranty & Contracts</a></li>
+                        </ul>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message Tags</label>
+                        <input type="text" class="form-control" id="message">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-wrapper">
+                    <div class="column">
+                      <ul class="list-inline btns-holder">
+                        <li><a href="#" class="btn btn-alt"><span>cancel</span></a></li>
+                        <li><input type="submit" value="post" class="btn btn-variant"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="support-block">
+          <div class="container">
+            <div class="row">
+              <span class="title">Looking for another opinion?</span>
+              <ul class="btn-list list-inline">
+                <li>
+                  <a href="#" class="btn btn-primary">Ask the community</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-primary">contact support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top clearfix">
+          <div class="row">
+            <div class="col-sm-11">
+              <nav class="footer-nav">
+                <ul class="list-inline">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-1">
+              <select class="lang-selection">
+                <option class="hideme" data-image="images/icon-flag01.png">&nbsp;</option>
+                <option data-image="images/icon-flag01.png">&nbsp;</option>
+                <option data-image="images/icon-flag01.png">&nbsp;</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-sm-8">
+              <ul class="social-networks list-inline">
+                <li><a href="#" class="facebook"><span class="ico-facebook"></span></a></li>
+                <li><a href="#" class="twitter"><span class="ico-tweet"></span></a></li>
+                <li><a href="#" class="youtube"><span class="ico-youtube"></span></a></li>
+                <li><a href="#" class="instagram"><span class="ico-instagram"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <span class="copyright-info">
+                © 1996-2016 <a href="#">NETGEAR<sup>®</sup></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

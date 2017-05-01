@@ -1,0 +1,129 @@
+#footer {
+  padding: 15px 0;
+  @include media('>=desktop') {
+    padding: 73px 0 47px;
+  }
+}
+
+.footer-top {
+  border: 1px solid #e2e2e2;
+  border-width: 0 0 1px;
+  padding: 0 0 2px;
+  margin: 0 0 15px;
+  @include media('>=tablet') {
+    padding-bottom: 17px;
+    margin-bottom: 30px;
+  }
+  .jcf-select.jcf-select-lang-selection {
+    margin: 6px 1px 0 0;
+    float: right;
+    @include media('<tablet') {
+      display: none !important;
+    }
+  }
+}
+
+.footer-nav {
+  margin: 0 0 0 -10px;
+  @include media('>=tablet') {
+    margin: 0 -15px;
+    float: left;
+  }
+  @include media('>=desktop') {
+    margin: 0 -24px 0 -18px;
+  }
+  ul {
+    margin: 0;
+    @include media('>=tablet') {
+      margin-left: -5px;
+    }
+  }
+  li {
+    text-transform: uppercase;
+    font: 700 14px/1.2 $base-montserrat;
+    padding: 0;
+    margin: 0 10px 5px;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    @include media('>=tablet') {
+      margin: 0 15px 5px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+    }
+    @include media('>=desktop') {
+      margin: 0 24px 11px;
+    }
+    &.active a,
+    a:hover {
+      color: $purple;
+      text-decoration: none;
+    }
+    a {
+      color: $variant-black;
+    }
+  }
+}
+
+.social-networks {
+  margin: 0 -10px;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  text-align: center;
+  @include media('>=tablet') {
+    text-align: left;
+  }
+  li {
+    font-size: 9px;
+    line-height: 1;
+    letter-spacing: 0;
+    padding: 0 10px 10px;
+    a {
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #b9b9b9;
+      color: $white;
+      &:hover {
+        text-decoration: none;
+        background: $variant-purple;
+      }
+    }
+    .facebook {
+      font-size: 11px;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: block;
+    }
+  }
+}
+
+.copyright-info {
+  display: block;
+  text-align: right;
+  font: 14px/1.2 $base-montserrat;
+  text-transform: uppercase;
+  color: #b9b9b9;
+  letter-spacing: 1px;
+  padding: 3px 0;
+  text-align: center;
+  @include media('>=tablet') {
+    text-align: right;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $variant-purple;
+      text-decoration: none;
+    }
+  }
+}

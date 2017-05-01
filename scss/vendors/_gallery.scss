@@ -1,0 +1,107 @@
+.cycle-gallery {
+  position: relative;
+  background: $white;
+  padding: 30px;
+  @include media('>=tablet') {
+    padding: 30px 40px 30px 39px;
+  }
+  .mask {
+    position: relative;
+    overflow: hidden;
+    .slideset {
+      width: 99999px;
+      float: left;
+    }
+    .slide {
+      float: left;
+      position: relative;
+      background-position: 0 50%;
+      &.active {
+        z-index: 1;
+      }
+    }
+  }
+  &.not-enough-slides {
+    .btn-next,
+    .btn-prev {
+      @include media('>=tablet') {
+        display: none;
+      }
+    }
+  }
+  .slick-list {
+    @include media('>=tablet') {
+      margin: 0 -5px;
+    }
+    @include media('>=desktop') {
+      margin: 0 -10px;
+    }
+  }
+  .slide {
+    @include media('>=phone') {
+      padding: 0 5px;
+    }
+    @include media('>=desktop') {
+      padding: 0 10px;
+    }
+  }
+
+  .slick-slide {
+    text-align: center;
+    img {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .btn-next,
+  .btn-prev,
+  .slick-next,
+  .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    transform: translate(0,-50%);
+    padding: 0;
+    background: none;
+    border-style: none;
+    &:hover {
+      text-decoration: none;
+      &:after {
+        color: $variant-green;
+      }
+    }
+    &:after {
+      content: '\e900';
+      display: inline-block;
+      vertical-align: top;
+      font: 12px/1 'icomoon';
+      color: $variant-purple;
+      transition: color 0.3s linear;
+    }
+  }
+  .btn-next,
+  .slick-next {
+    left: auto;
+    right: 15px;
+    transform: translate(0,-50%) scale(-1);
+  }
+}
+
+
+
+.js-tab-hidden {
+  display:block !important;
+  left:-9999px !important;
+  position: absolute !important;
+  top:-9999px !important;
+}
+
+.popup-holder {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}
